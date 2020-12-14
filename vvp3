@@ -1,0 +1,16 @@
+using System;
+
+namespace vvp3
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Введите первое число:");
+            float a = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Введите второе число:");
+            float b = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Стеднее арифметическое = " + (a + b)/2 );
+        }
+    }
+}
