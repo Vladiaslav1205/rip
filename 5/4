@@ -1,0 +1,22 @@
+
+using System;
+
+namespace vvp4
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Введите координаты первой точки через пробел:");
+            string[] A = Console.ReadLine().Split(' ');
+            int a = int.Parse(A[0]);
+            int b = int.Parse(A[1]);
+            Console.WriteLine("Введите координаты второй точки через пробел:");
+            string[] B = Console.ReadLine().Split(' ');
+            int c = int.Parse(B[0]);
+            int d = int.Parse(B[1]);
+            Console.WriteLine("Периметр прямоугольника = " + (Math.Abs(c - a) + Math.Abs(d - b))*2);
+            Console.WriteLine("Площадь прямоугольника = " + (Math.Abs(c - a) * Math.Abs(d - b)));
+        }
+    }
+}
