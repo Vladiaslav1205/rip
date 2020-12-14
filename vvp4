@@ -1,0 +1,19 @@
+using System;
+
+namespace vvp4
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Введите первое число:");
+            float a = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Введите второе число:");
+            float b = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Сумма квадратов = " + a * a + b * b);
+            Console.WriteLine("Разность квадратов = " + (a * a - b * b));
+            Console.WriteLine("Произведение квадратов = " + a * a * b * b);
+            Console.WriteLine("Частное квадратов = " + a * a / (b * b));
+        }
+    }
+}
