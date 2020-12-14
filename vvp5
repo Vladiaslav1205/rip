@@ -1,0 +1,19 @@
+using System;
+
+namespace vvp5
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Введите первое число:");
+            float a = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Введите второе число:");
+            float b = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Сумма модулей = " + (Math.Abs(a) + Math.Abs(b)));
+            Console.WriteLine("Разность модулей = " + (Math.Abs(a) - Math.Abs(b)));
+            Console.WriteLine("Произведение модулей = " + Math.Abs(a) * Math.Abs(b));
+            Console.WriteLine("Частное модулей = " + Math.Abs(a) / Math.Abs(b));
+        }
+    }
+}
