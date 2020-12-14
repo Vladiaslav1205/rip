@@ -1,0 +1,16 @@
+using System;
+
+namespace vvp1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Введите длину прямоугольника:");
+            Int32 a = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Введите ширину прямоугольника:");
+            Int32 b = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Периметр = " + 2 * (a + b) +", Площадь = " + a * b);
+        }
+    }
+}
