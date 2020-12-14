@@ -1,0 +1,26 @@
+
+using System;
+
+namespace vvp5
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Введите координаты первой точки через пробел:");
+            string[] A = Console.ReadLine().Split(' ');
+            int a = int.Parse(A[0]);
+            int b = int.Parse(A[1]);
+            Console.WriteLine("Введите координаты второй точки через пробел:");
+            string[] B = Console.ReadLine().Split(' ');
+            int c = int.Parse(B[0]);
+            int d = int.Parse(B[1]);
+            Console.WriteLine("Введите координаты третьей точки через пробел:");
+            string[] C = Console.ReadLine().Split(' ');
+            int e = int.Parse(C[0]);
+            int f = int.Parse(C[1]);
+            Console.WriteLine("Периметр треугольника = " + (Math.Sqrt(Math.Pow((c - a), 2) + Math.Pow((d - b), 2)) + Math.Sqrt(Math.Pow((e - a), 2) + Math.Pow((f - b), 2)) + Math.Sqrt(Math.Pow((c - e), 2) + Math.Pow((d - f), 2))));
+            Console.WriteLine("Площадь треугольника = " + 0.5 * (Math.Abs((c - a) * (f - b) - (e - a) * (d - b))));
+        }
+    }
+}
