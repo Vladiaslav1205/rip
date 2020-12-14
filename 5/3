@@ -1,0 +1,20 @@
+
+using System;
+
+namespace vvp3
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Введите координаты точек A, B, и C через пробел (точка C расположена между точками A и B):");
+            string[] A = Console.ReadLine().Split(' ');
+            int a = int.Parse(A[0]);
+            int b = int.Parse(A[1]);
+            int c = int.Parse(A[2]);
+            Console.WriteLine("Длина отрезка AC = " + Math.Abs(a-c));
+            Console.WriteLine("Длина отрезка BC = " + Math.Abs(b-c));
+            Console.WriteLine("Произведение длин отрезков AC и BC = " + (Math.Abs(a-c) * Math.Abs(b-c)));
+        }
+    }
+}
