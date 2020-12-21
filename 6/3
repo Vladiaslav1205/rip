@@ -1,0 +1,21 @@
+using System;
+
+namespace vvp3
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Введите числа A и B и C через пробел:");
+            string[] A = Console.ReadLine().Split(' ');
+            int a = int.Parse(A[0]);
+            int b = int.Parse(A[1]);
+            int c = int.Parse(A[2]);
+            int d = c;
+            c = a;
+            a = b;
+            b = d;
+            Console.WriteLine("A = " + a + "; B = " + b + "; C = " + c);
+        }
+    }
+}
