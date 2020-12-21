@@ -1,0 +1,14 @@
+using System;
+
+namespace vvp5
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Введите номер года: ");
+            int a = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Номер столетия: " + (a/100 + 1));
+        }
+    }
+}
