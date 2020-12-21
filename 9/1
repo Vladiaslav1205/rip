@@ -1,0 +1,14 @@
+using System;
+
+namespace vvp1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Введите количество прошедших секунд: ");
+            int a = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("С конца последней минуты прошло: " + a%60 + " секунд(ы)");
+        }
+    }
+}
