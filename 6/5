@@ -1,0 +1,16 @@
+using System;
+
+namespace vvp5
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Введите числа A и B и C через пробел:");
+            double a = Convert.ToDouble(Console.ReadLine());
+            a = a - 3;
+            a = 4 * Math.Pow(a, 6) - 7 * Math.Pow(a, 3) + 2;
+            Console.WriteLine("Ответ: " + a);
+        }
+    }
+}
