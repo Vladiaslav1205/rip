@@ -1,0 +1,19 @@
+using System;
+
+namespace vvp4
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Введите A: ");
+            int a = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Введите B: ");
+            int b = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Введите С: ");
+            int c = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Максимально возможное количество квадратов со стороной C на прямоугольнике A на B : " + a / c * b / c);
+            Console.WriteLine("Площадь незанятой части прямоугольника: " + (a * b - a / c * c * b / c * c));
+        }
+    }
+}
