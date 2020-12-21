@@ -1,0 +1,21 @@
+using System;
+
+namespace vvp7
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Введите a: ");
+            int a = Convert.ToInt32(Console.ReadLine());
+            int b;
+            int c;
+            b = a * a;
+            c = b * b;
+            b = c * a;
+            c = b * b;
+            b = b * c;
+            Console.WriteLine("Ответ: " + b);
+        }
+    }
+}
