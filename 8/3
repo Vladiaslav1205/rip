@@ -6,9 +6,9 @@ namespace vvp3
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Введите длину отрехка A: ");
+            Console.WriteLine("Введите длину отрезка A: ");
             int a = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Введите длину отрехка B: ");
+            Console.WriteLine("Введите длину отрезка B: ");
             int b = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Незанятая часть отрезка A равна " + a%b);
         }
