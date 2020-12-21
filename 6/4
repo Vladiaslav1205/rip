@@ -6,7 +6,7 @@ namespace vvp4
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Введите числа A и B и C через пробел:");
+            Console.WriteLine("Введите x: ");
             double a = Convert.ToDouble(Console.ReadLine());
             a = 3 * Math.Pow(a, 6) - 6 * Math.Pow(a, 2) - 7;
             Console.WriteLine("Ответ: " + a);
