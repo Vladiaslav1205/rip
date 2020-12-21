@@ -1,0 +1,14 @@
+using System;
+
+namespace vvp2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Введите целое число K: ");
+            int a = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Номер дня недели: " + a % 7);
+        }
+    }
+}
