@@ -6,9 +6,9 @@ namespace vvp2
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Введите длину отрехка A: ");
+            Console.WriteLine("Введите длину отрезка A: ");
             int a = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Введите длину отрехка B: ");
+            Console.WriteLine("Введите длину отрезка B: ");
             int b = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("На отрезке A можно разместить максимум " + a/b + " отрезков B без наложений");
         }
