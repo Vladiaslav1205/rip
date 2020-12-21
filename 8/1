@@ -1,0 +1,14 @@
+using System;
+
+namespace vvp1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Введите размер файла в байтах: ");
+            double a = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Размер файла равен " + a/ 1024 + "Кбайт");
+        }
+    }
+}
