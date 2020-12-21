@@ -1,0 +1,14 @@
+using System;
+
+namespace vvp4
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Введите двузначное число: ");
+            int a = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Итог перестановки цифр: " + (a % 10 * 10 + a/10));
+        }
+    }
+}
