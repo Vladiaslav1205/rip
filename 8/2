@@ -1,0 +1,16 @@
+using System;
+
+namespace vvp2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Введите длину отрехка A: ");
+            int a = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Введите длину отрехка B: ");
+            int b = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("На отрезке A можно разместить максимум " + a/b + " отрезков B без наложений");
+        }
+    }
+}
