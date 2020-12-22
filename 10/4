@@ -1,0 +1,14 @@
+using System;
+
+namespace vvp4
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Введите трехзначное число: ");
+            int a = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Ответ: " + ((((a / 100) < ((a / 10) % 10))&&(((a / 10) % 10) <(a % 10))) || (((a / 100) > ((a / 10) % 10)) && (((a / 10) % 10) > (a % 10)))));
+        }
+    }
+}
