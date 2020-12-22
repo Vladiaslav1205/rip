@@ -1,0 +1,17 @@
+using System;
+
+namespace vvp1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Введите A: ");
+            int a = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Введите B: ");
+            int b = Convert.ToInt32(Console.ReadLine());
+            bool c;
+            Console.WriteLine("Ответ: " + (c = (a > 2)&&(b <= 3)));
+        }
+    }
+}
