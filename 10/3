@@ -8,7 +8,7 @@ namespace vvp3
         {
             Console.WriteLine("Введите A: ");
             int a = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Ответ: " + ((a % 2 == 0)&&(a < 100) && (a > 9)));
+            Console.WriteLine("Ответ: " + ((a % 2 == 0)&&(a / 10 < 10)));
         }
     }
 }
