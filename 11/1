@@ -1,0 +1,23 @@
+using System;
+
+namespace vvp1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Введите A: ");
+            int a = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Введите B: ");
+            int b = Convert.ToInt32(Console.ReadLine());
+            if (a == b)
+                a = b = 0;
+            else
+                if (a > b)
+                    b = a;
+                else
+                    a = b;
+            Console.WriteLine("A = " + a + ", B = 7" + b);
+        }
+    }
+}
