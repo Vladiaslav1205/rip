@@ -1,0 +1,29 @@
+using System;
+
+namespace vvp3
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Введите координаты точки A через пробел:");
+            string[] As = Console.ReadLine().Split(' ');
+            int a = int.Parse(As[0]);
+            int b = int.Parse(As[1]);
+            Console.WriteLine("Введите координаты точки B через пробел:");
+            string[] Bs = Console.ReadLine().Split(' ');
+            int c = int.Parse(Bs[0]);
+            int d = int.Parse(Bs[1]);
+            Console.WriteLine("Введите координаты точки C через пробел:");
+            string[] Cs = Console.ReadLine().Split(' ');
+            int e = int.Parse(Cs[0]);
+            int f = int.Parse(Cs[1]);
+            double B = Math.Sqrt(Math.Pow((c - a), 2) + Math.Pow((d - b), 2));
+            double C = Math.Sqrt(Math.Pow((e - a), 2) + Math.Pow((f - b), 2));
+            if (B < C)
+                Console.WriteLine("Ближе точка B, расстояние" + B);
+            else
+                    Console.WriteLine("Ближе точка C, расстояние:" + C);
+        }
+    }
+}
