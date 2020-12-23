@@ -1,0 +1,25 @@
+using System;
+
+namespace vvp4
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Введите координаты точки A через пробел:");
+            string[] As = Console.ReadLine().Split(' ');
+            int a = int.Parse(As[0]);
+            int b = int.Parse(As[1]);
+            if ((a > 0)&&(b > 0))
+                Console.WriteLine("Точка находится в I координатной плоскости");
+            else
+                if ((a < 0) && (b > 0))
+                    Console.WriteLine("Точка находится в II координатной плоскости");
+                else
+                    if ((a < 0) && (b < 0))
+                        Console.WriteLine("Точка находится в III координатной плоскости");
+                    else
+                        Console.WriteLine("Точка находится в VI координатной плоскости");
+        }
+    }
+}
