@@ -1,0 +1,32 @@
+using System;
+
+namespace vvp6
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Введите число: ");
+            int a = Convert.ToInt32(Console.ReadLine());
+            string b;
+            string c;
+            if (a == 0)
+                Console.WriteLine("Нулевое число");
+            else
+            {
+                if (a % 2 == 0)
+                    b = "Чётное ";
+                else
+                    b = "Нечётное ";
+                if (a / 10 == 0)
+                    c = "однозначное ";
+                    else
+                        if (a / 100 == 0)
+                        c = "двузначное ";
+                    else
+                        c = "трёхзначное ";
+                Console.WriteLine(b + c + "число");
+            }
+        }
+    }
+}
