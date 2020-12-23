@@ -1,0 +1,75 @@
+using System;
+
+namespace vvp2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Введите исходное направление (С, З, Ю, В): ");
+            string a = Console.ReadLine();
+            Console.WriteLine("Введите комнанду (0, 1, -1): ");
+            int b = Convert.ToInt32(Console.ReadLine());
+            switch (a)
+            {
+                case "С":
+                    switch (b)
+                    {
+                        case 0:
+                            a = "С";
+                        break;
+                        case 1:
+                            a = "З";
+                        break;
+                        case -1:
+                            a = "В";
+                        break;
+                    }
+                break;
+                case "З":
+                    switch (b)
+                    {
+                        case 0:
+                            a = "З";
+                            break;
+                        case 1:
+                            a = "Ю";
+                            break;
+                        case -1:
+                            a = "С";
+                            break;
+                    }
+                    break;
+                case "Ю":
+                    switch (b)
+                    {
+                        case 0:
+                            a = "Ю";
+                            break;
+                        case 1:
+                            a = "В";
+                            break;
+                        case -1:
+                            a = "З";
+                            break;
+                    }
+                    break;
+                case "В":
+                    switch (b)
+                    {
+                        case 0:
+                            a = "В";
+                            break;
+                        case 1:
+                            a = "С";
+                            break;
+                        case -1:
+                            a = "Ю";
+                            break;
+                    }
+                    break;
+            }
+            Console.WriteLine("Новое направление: " + a);
+        }
+    }
+}
