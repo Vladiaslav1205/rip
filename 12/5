@@ -1,0 +1,16 @@
+using System;
+
+namespace vvp5
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Введите номер года: ");
+            int a = Convert.ToInt32(Console.ReadLine());
+            string[] c = new string[5] {  "чёрн", "зелён", "красн", "жёлт", "бел" };
+            string[] d = new string[12] { "ой обезьяны", "ой курицы", "ой собаки", "ой свиньи", "ой крысы", "ой коровы", "ого тигра", "ого зайца", "ого дракона", "ой змеи", "ой лошади", "ой овцы" };
+            Console.WriteLine("Год " + c[(a + 8)/12%5] + d[a % 12]);
+        }
+    }
+}
