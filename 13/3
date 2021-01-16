@@ -1,0 +1,22 @@
+namespace vvp3
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Введите число: ");
+            int a = Convert.ToInt32(Console.ReadLine());
+            a = a * 2 - 1;
+            double c = 0;
+            double i = 1;
+            do
+            {
+                c = c + i;
+                i = i + 2;
+                Console.WriteLine("Текущее значение суммы: " + c);
+            }
+            while (a >= i);
+                Console.WriteLine("Ответ: " + c);
+        }
+    }
+}
