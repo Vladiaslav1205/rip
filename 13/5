@@ -1,0 +1,22 @@
+using System;
+
+namespace vvp5
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Введите вещественное число: ");
+            double a = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Введите целое число: ");
+            int n = Convert.ToInt32(Console.ReadLine());
+            double b = 0;
+            while (n >= 0)
+            {
+                b = b + Math.Pow(a, n) * Math.Pow(-1,n);
+                n--;
+            }
+                Console.WriteLine("Ответ: " + b);
+        }
+    }
+}
