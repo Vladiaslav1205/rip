@@ -1,0 +1,28 @@
+using System;
+
+namespace vvp6
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Введите число Фибоначчи: ");
+            int a = Convert.ToInt32(Console.ReadLine());
+            int b = 1;
+            int c = 0;
+            int i = 2;
+            if (a == 0)
+                Console.WriteLine("Номер в последоваительности " + 1);
+            else
+            {
+                while (b != a)
+                {
+                    b += c;
+                    c = b - c;
+                    i++;
+                }
+                Console.WriteLine("Номер в последоваительности " + i);
+            }
+        }
+    }
+}
