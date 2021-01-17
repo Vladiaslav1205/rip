@@ -1,0 +1,23 @@
+using System;
+
+namespace vvp4
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Введите значение процентной ставки: ");
+            int a = Convert.ToInt32(Console.ReadLine());
+            double b = 1000;
+            int c = 0;
+            do
+            {
+                c++;
+                b = b * (1 + (double) a/100);
+
+            }
+            while (b < 1100);
+            Console.WriteLine("Количество месяцев: "+ c +"; Итоговая сумма: "+ b);
+        }
+    }
+}
